@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h2 style="font-family: Pacifico; color: red; cursor: pointer;">WEB <span style="color: #fff">DEVELOPMENT</span></h2>
+        </div>
+        <ul>
+            <li><a href="index.html" class="hide">HOME</a></li>
+            <li><a href="learn.html" class="hide">LEARN</a></li>
+            <li><a href="#" class="hide">GALLERY</a></li>
+            <li><a href="#" class="hide">CONTACT</a></li>
+            
+           
+        </ul>
+        <div class="menuicon">
+            <div class="menubar" onclick="menubar()"><svg fill="white" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
+           <button class="btn hide" onclick="show()"> <li><a href="#" style="font-weight: 700;">LOGIN</a></li></button>
+       </div>
+    </nav>
+    <div class="sidebar">
+    <ul>
+        <li class="close" onclick="closebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="index.html" >HOME</a></li>
+        <li><a href="learn.html" >LEARN</a></li>
+        <li><a href="#" >GALLERY</a></li>
+        <li><a href="#" >CONTACT</a></li>
+        <li class=" navbtn" onclick="show()"><a href="#">LOGIN</a></li>
+    </ul>
+       
+    </ul>
+    </div>
+
+   <div class="container">
+    <div class="form-filed">
+        <div class="login-close" onclick="loginclose()"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></div>
+        <div class="form-group">
+            <h2>SiGN- <span style="color: red;"> UP!</span></h2>
+            
+            <form >
+               <div class="form-input">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg>
+                <input type="text" placeholder="name" required>
+               </div>
+               <div class="form-input">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                 <input type="email" placeholder="Email" required>
+               </div>
+               <div class="form-input">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"/></svg>
+                 <input type="password" placeholder="password" required>
+               </div>
+               <input class="submit" type="submit" value="submit">
+               <input class="submit" type="reset" value="reset">
+               <p style="color: blue;">Forgot Password <a href="#">click here</a></p>
+               
+            </form>
+        </div>
+        <div class="btn-group">
+            <button>SIGN-UP</button>
+            <button>SIGN-IN</button>
+            
+        </div>
+    </div>
+   </div>
+
+   <main>
+ 
+
+        <div class="container2">
+            <div class="tit">
+                <h2>Here are the fundamental coding languages for frontend development</h2>
+                <p>With these web notes, you can grasp the foundational basics that empower 
+                   you to craft imaginative <br>and visually appealing websites that originate
+                   from your creativity.
+                </p>
+            </div>
+            <div class="introductions">
+                <h2 >INTRODUCTION TO HTML</h2>
+                <div class="html" >
+                  
+                  <div class="content">
+                   
+                    <p>Welcome to the foundation of the digital realm - HTML, the language that 
+                       breathes life into the web. At <span style="font-family: Pacifico; color: red; cursor: pointer;">WEB</span>-D,
+                       we believe in the power of HTML as the bedrock of every online experience. HTML, or HyperText Markup Language, is
+                       not merely a code; it's the architect's blueprint, the canvas for creativity, and the essence of seamless user interaction.
+                       In the ever-evolving landscape of web development, HTML remains the cornerstone, shaping the structure and content of every
+                       webpage. As we navigate the dynamic world of technology, we understand the pivotal role HTML plays in creating intuitive and 
+                       accessible digital experiences. It's the language that structures the bones of your website, providing a sturdy framework for 
+                       the visual elements that captivate your audience.
+                    </p>
+                </div> 
+                <div class="video">
+                    <h2 style="margin-bottom: 20px;">Basics of <span style="color: red;">HTML</span> </h2>
+                    <video src="videos/htmlv.mp4" controls poster="images/html-intro.jpg"></video>
+                </div>
+                </div> 
+                <div class="html">
+                    <div class="content">    
+                        <p>
+                            Our team of dedicated developers at  <span style="font-family: Pacifico; color: red; cursor: pointer;">WEB</span>-D possesses a profound understanding of HTML's intricacies, harnessing its
+                            capabilities to transform ideas into engaging and functional websites. From crafting clean and semantic code to ensuring cross-browser 
+                            compatibility, we embrace HTML as the silent force that unifies design and functionality.
+                            Explore our HTML expertise in our portfolio, where each project reflects our commitment to 
+                            precision and innovation  Whether you're a startup looking to establish your online presence 
+                            or an established enterprise aiming to revamp your digital footprint.
+                        </p>    
+                    </div>
+                    <div class="video"> 
+                        <p>   
+                         our HTML solutions are tailored to meet your unique needs.
+                        Ready to embark on a journey where HTML is not just a language but a storyteller of your brand? Contact us today, and let's weave 
+                        the narrative of your digital success together. Welcome to the realm where HTML transforms possibilities into realities, and at 
+                        <span style="font-family: Pacifico; color: red; cursor: pointer;">WEB</span>-D, we're here to shape the digital future with you.
+                    </p>
+                   </div> 
+                </div>
+                    
+                
+            </div>
+            <div class="introductions">
+                <h2 >INTRODUCTION TO CSS</h2>
+                <div class="html">
+                    <div class="content">
+                        <p>
+                            Embark on a journey of style and elegance with CSS3, the aesthetic
+                            architect of the web. At <span style="font-family: Pacifico; color: red; cursor: pointer;">WEB</span>-D,
+                            we understand that a website's visual appeal is as crucial as its
+                            functionality. CSS3, or Cascading Style Sheets, is the design language that breathes life 
+                            into the digital canvas, allowing us to sculpt seamless and captivating user experiences.
+                            In the realm of web development, CSS3 is not just a styling tool; it's a creative force that
+                            transforms code into visually stunning masterpieces. Our team at <span style="font-family: Pacifico; color: red; cursor: pointer;">WEB</span>-D 
+                            leverages the power of CSS3 to transcend the ordinary, creating websites that not only function flawlessly but also captivate with their aesthetics.
+                        </p>
+                    </div>
+
+                    <div class="video">
+                         <p>
+                            Explore our portfolio to witness the transformative touch of CSS3 in action. From responsive
+                            layouts that adapt to every screen size to intricate animations that enhance user engagement, 
+                            CSS3 is the brush that paints the digital landscape. Whether you're envisioning a sleek and modern design or a whimsical 
+                            and playful interface, our expertise in CSS3 ensures your vision comes to life in pixels and colors.
+                            Ready to elevate your digital presence? Contact us to discover how CSS3 can turn your website into a visually 
+                            compelling masterpiece. Welcome to the world where style meets substance, and at <span style="font-family: Pacifico; color: red; cursor: pointer;">WEB</span>-D,
+                            we craft experiences that leave a lasting impression.
+                         </p>
+                    </div>
+                </div>
+
+                <div class="html">
+                    <div class="content">
+                      <h2 style="margin-bottom: 20px;">Basics of <span style="color: red;">CSS3</span> </h2>
+                      <video src="videos/css3v.mp4" controls poster="images/css-intro.png" style="flex-basis: 45%; width: 100%; border-radius: 10px;"></video>
+                    </div>
+
+                    <div class="video">
+                        <p>
+                            In the dynamic universe of web design, CSS3 serves as the key to unlocking boundless creativity. From the simplest typographic adjustments to 
+                            the most intricate animations, CSS3 empowers designers to bring their imaginations to life on the digital stage.
+                            At <span style="font-family: Pacifico; color: red; cursor: pointer;">WEB</span>-D, we believe in harnessing
+                            the full potential of CSS3 to create immersive and memorable user interfaces. Our commitment is to not just follow 
+                            trends but to set them, pushing the boundaries of what's possible with CSS3 to craft websites that stand out in a crowded digital landscape.
+                            CSS3 is not merely about style; it's about creating an unparalleled user experience. With its responsive design capabilities, CSS3 enables 
+                            websites to gracefully adapt to various devices, ensuring a seamless journey for users across desktops, tablets, and mobiles. 
+                            At <span style="font-family: Pacifico; color: red; cursor: pointer;">WEB</span>-D, we specialize in leveraging CSS3 to strike the perfect 
+                            balance between elegance and functionality. Whether you're aiming for a minimalist approach or a bold and vibrant aesthetic, our team utilizes 
+                            CSS3 to tailor designs that not only look visually appealing but also provide an intuitive and user-friendly experience for your audience. 
+                            Welcome to the era where CSS3 transforms websites into interactive works of art.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="introductions">
+                <h2 >INTRODUCTION TO JAVASCRIPT</h2>
+                <div class="html">
+                   
+                <div class="content">
+                  <p>
+                    Step into the realm of enhanced user experiences and seamless interactivity with JavaScript at 
+                    <span style="font-family: Pacifico; color: red; cursor: pointer;">WEB</span>-D. As the backbone 
+                    of modern web development, JavaScript allows us to create websites that respond dynamically to user 
+                    actions, providing a personalized and engaging journey. At the core of our development philosophy is 
+                    the belief that JavaScript is not just a language but a catalyst for turning static websites into dynamic, 
+                    user-centric platforms.JavaScript's versatility shines through in its ability to handle client-side functionalities, 
+                    enabling us to build feature-rich web applications that feel both intuitive and responsive. From handling user inputs 
+                    to facilitating asynchronous communication with servers, JavaScript plays a pivotal role in shaping the digital 
+                    experiences we deliver. Explore our projects to witness firsthand how JavaScript transforms ideas into interactive 
+                    realities, offering users more than just content but a memorable and participatory journey.
+
+                  </p>
+                </div>
+
+                <div class="video">
+                   <p>
+                    Ready to elevate your website's interactivity and user engagement? Reach out to us, and let's embark on a collaborative 
+                    journey to harness the power of JavaScript. Welcome to a world where your website becomes not just a destination but an 
+                    interactive and dynamic experience that keeps visitors coming back for more.JavaScript doesn't operate in isolation; it 
+                    thrives in collaboration with powerful libraries and frameworks that amplify its capabilities. At <span style="font-family: Pacifico; color: red; cursor: pointer;">WEB</span>-D, 
+                    we leverage popular tools like React, Vue, or Angular to build scalable and maintainable web applications. These technologies, 
+                    coupled with the versatility of JavaScript, empower us to streamline development processes, enhance code efficiency, and deliver 
+                    robust solutions that stand the test of time. Explore our proficiency in JavaScript ecosystems, and discover how these libraries 
+                    and frameworks become the building blocks of seamless and innovative digital experiences.
+                   </p>
+                </div>
+
+
+                </div>
+
+                <div class="html">
+                    <div class="content">
+                        <p>
+                            Ensuring a consistent user experience across various browsers and devices is a hallmark of effective web development. 
+                            JavaScript plays a crucial role in achieving this goal by enabling the creation of responsive and cross-browser 
+                            compatible websites. At <span style="font-family: Pacifico; color: red; cursor: pointer;">WEB</span>-D, 
+                            we meticulously implement JavaScript to ensure that your website functions flawlessly on different platforms, 
+                            offering a uniform and engaging experience to users, regardless of their chosen browser or device. Contact us 
+                            to discover how our commitment to JavaScript excellence translates into websites that not only meet but exceed 
+                            the expectations of your diverse audience. Welcome to a digital landscape where JavaScript takes center stage 
+                            in crafting dynamic, cross-compatible, and forward-looking web solutions.
+                        </p>
+                    </div>
+                    <div class="video">
+                        <h2 style="margin-bottom: 20px;">Basics of <span style="color: red;">JavaScript</span> </h2>
+                        <video src="videos/jsv.mp4" controls poster="images/js-intro1.jpg"></video>
+                    </div>
+                </div>
+
+            </div>   
+            
+
+
+       
+    </div>
+   
+
+    
+    </div>
+<div class="know-btn">
+    <button ><a href="">TO KNOW MORE</a></button>
+</div>
+   
+ 
+
+
+   </main>
+   
+ <footer>
+    <div class="footer-content">
+        <div class="div1">
+            <h3>Motive To </h3>
+            <p style="font-size: 12px;">Inspire eager learners
+                to strengthen their frontend coding proficiency in HTML, CSS3, JavaScript, 
+                and Bootstrap, guiding them from the basics to advanced levels.
+            </p>
+            <h5>FALLOW US ON</h5>
+            <div class="media">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+              </div>
+           
+        
+        </div>
+        <div class="div1">
+            <h3>Contact Us</h3>
+            <i class="fa fa-phone" style="font-size: small;"><span style="font-weight: 600;"> +91 7397592742</span></i>
+            <br>
+            <i class="fa fa-envelope" style="font-size: small; "><span style="font-weight: 600;">yugeshkaran01@gmail.com</span></i>
+            <br>
+            <i class="fa fa-home" style="font-size: small;"><span style="font-weight: 600;"> Trichy,Tamil Nadu,India</span></i>
+            
+             
+         </div>
+         <div class="div1">
+            <h3>Navigate To</h3>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html">ABOUT</a></li>
+            <li><a href="index.html">Templates</a></li>
+            
+          </div>
+          <div class="div1">
+            <h3>Our Services</h3>
+            <li><a href="">help</a></li>
+            <li><a href="">FAQ's</a></li>
+          </div>
+    </div>
+    <hr>
+    <p style="text-align: center;">Copyright &copy;2023 All rights reserved | Block is made with by <span style="color: rgb(0, 140, 255);">NEOTERIC!</span></p>
+  
+ </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="javas.js">
+      
+    </script>
+</body>
+</html>
